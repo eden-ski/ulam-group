@@ -26,7 +26,7 @@ def generate_sequence(u, v, n):
 # E.g. to generate 3, 1 is used once and 2 is used once,
 # so term_freq = {1: 1, 2: 1, 3: 0}
 # the term_num dict stores the term value as a key and the
-# term_num as the key value
+# term number as the key value
 def generate_term_frequency(u, v, n):
     term_frequency = {u: 1, v: 1}
     term_number = {u: 1, v: 2}
