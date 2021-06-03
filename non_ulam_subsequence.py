@@ -28,7 +28,7 @@ def limit_an():
 # returns an array of the non ulam number for x and
 # how many sums can make that number
 def plot_rulam_reps():
-    data = importUlam('ulamr1000_1_2.json')
+    data = importUlam('ulamr10000_1_2.json')
     for i in range(1, int(len(data)/6)):
         x.append(data[i][0])
         y.append(data[i][1])
@@ -36,7 +36,7 @@ def plot_rulam_reps():
 
 # returns natural numbers and non cos(2.571447*u_n) where u_n is the non ulam numbers
 def plot_rulam():
-    data = importUlam('ulamr1000_1_2.json')
+    data = importUlam('ulamr10000_1_2.json')
     for i in range(1, len(data)):
         x.append(i)
         y.append(np.cos(data[i][0] * 2.571447))
@@ -44,7 +44,7 @@ def plot_rulam():
 
 # returns natural numbers and cos(2.571447*u_n) where u_n is the ulam numbers
 def plot_ulam():
-    data = importUlam('ulam1000_1_2.json')
+    data = importUlam('ulam10000_1_2.json')
     for i in range(1, len(data)):
         x.append(i)
         y.append(np.cos(2.571447*data[i][0]))
@@ -53,7 +53,7 @@ def plot_ulam():
 # return natural numbers and array of list non ulum numbers that can be
 # made with a certain number of pairs
 def plot_rulam_sum_count():
-    data = importUlam('ulamr1000_1_2.json')
+    data = importUlam('ulamr10000_1_2.json')
     x = []
     y = []
     for j in range(0,7):
@@ -73,11 +73,11 @@ def plot_rulam_sum_count():
 # 3d plot of ulam numbers with the smaller of the sum as the x axis,
 # the larger of the sum as the y axis, and the ulam number as the z axis
 def plot_3d_ulam():
-    data = importUlam('ulam1000_1_2.json')
-    data2 = importUlam('ulam1000_1_3.json')
-    data3 = importUlam('ulam1000_1_4.json')
-    data4 = importUlam('ulam1000_1_5.json')
-    data5 = importUlam('ulam1000_1_6.json')
+    data = importUlam('ulam10000_1_2.json')
+    data2 = importUlam('ulam10000_1_3.json')
+    data3 = importUlam('ulam10000_1_4.json')
+    data4 = importUlam('ulam10000_1_5.json')
+    data5 = importUlam('ulam10000_1_6.json')
     xt = []
     yt = []
     zt = []
